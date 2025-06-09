@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>prekenalan</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .kotak{
+            background-color: #70482b;
+            height: 500px;
+            width: 1000px;
+            border-radius: 20px;
+            position: absolute;
+            animation: kota 1s forwards;
+        }
+        .kotakb{
+            background-color: rgb(238, 209, 112);
+            height: 60px;
+            width: 100px;
+            border-radius: 10px;
+            position: absolute;
+            top: 515px;
+            animation: kotay 1s forwards;
+        }
+        @keyframes kota {
+            0%{top: -400px;}
+            100%{top: 10px;}
+        }
+        @keyframes kotay{
+            0%{top: 120%;}
+            100%{top: 515px;}
+        }
+    </style>
+    <div class="kotak"></div>
+    <a href="home.html"><div class="kotakb"> <img src="panah.png" style="height: 60px;width: 100px;"></div></a>
+</body>
+</html>

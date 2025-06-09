@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>kontak saya</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .inputteks{
+            background-color: #70482b;
+            color: bisque;
+            height: 40px;
+            width: 400px;
+            font-family: Heavitas;
+            position: absolute;
+            top: 90%;
+            left: 450px;
+            border-radius: 10px;
+            font-size: 25px;
+            animation: inpu1 1s forwards;
+            z-index: 2;
+            box-shadow: 0px 0px 50px black;
+            border: 2px #70482b solid;
+            z-index: 1;
+        }
+        .kotakb{
+            background-color: rgb(238, 209, 112);
+            height: 60px;
+            width: 100px;
+            border-radius: 10px;
+            position: absolute;
+            top: 515px;
+            animation: inpu1 1s forwards;
+        }
+        .tb1{
+            background-color:bisque;
+            height: 43px;
+            width: 50px;
+            position: absolute;
+            top: 90%;
+            left: 870px;
+            animation: inpu1 1s forwards;
+            z-index: 2;
+            box-shadow: 0px 0px 50px black;
+            border: none;
+            border-radius: 100%;
+        }
+        .gb1{
+            height: 33px;
+            width: 37px;
+        }
+        .bkjawa{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 300px;
+            left: 780px;
+            font-family: Heavitas;
+        }
+        .bkjawa3{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 400px;
+            left: 400px;
+            font-family: Heavitas;
+        }
+        .bkjawa4{
+            animation: tekh2 1s forwards;
+        }
+        .bkjawa2{
+            animation: tekh1 1s forwards;
+        }
+        .jawa1{
+            font-size: 22px;
+            font-family: Heavitas;
+            color: bisque;
+            position: relative;
+            top: -27px;
+        }
+        .kotakgede{
+            background-color: bisque;
+            height: 500px;
+            width: 580px;
+            box-shadow: 0px 0px 30px black;
+            border-radius: 20px;
+            position: absolute;
+            top: 30px;
+            left: 360px;
+            animation: kotagede 1s forwards;
+        }
+        .tanyaapaaja{
+            font-family: Heavitas;
+            font-size: 30px;
+            color: #70482b;
+            position: absolute;
+            top: 3px;
+            left: 160px;
+        }
+        .contoh1{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 60px;
+            left: 8px;
+            animation: contoh 1.4s forwards;
+        }
+        .contoh1text{
+            color: bisque;
+            font-size: 20px;
+            font-family: Heavitas;
+            position: relative;
+            top: -22px;
+        }
+        .contoh2{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 60px;
+            left: 100px;
+            animation: co 1.4s forwards;
+        }
+        .contoh2text{
+            color: bisque;
+            font-size: 20px;
+            font-family: Heavitas;
+            position: relative;
+            top: -22px;
+        }
+        .contoh3{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 110px;
+            left: 8px;
+            animation: contoh 1.3s forwards;
+        }
+        .contoh3text{
+            color: bisque;
+            font-size: 20px;
+            font-family: Heavitas;
+            position: relative;
+            top: -22px;
+        }
+        .contoh4{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 160px;
+            left: 8px;
+            animation: contoh 1.2s forwards;
+        }
+        .contoh4text{
+            color: bisque;
+            font-size: 20px;
+            font-family: Heavitas;
+            position: relative;
+            top: -22px;
+        }
+        .contoh5{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 210px;
+            left: 8px;
+            animation: contoh 1.1s forwards;
+        }
+        .contoh5text{
+            color: bisque;
+            font-size: 20px;
+            font-family: Heavitas;
+            position: relative;
+            top: -22px;
+        }
+        .contoh6{
+            background-color: #70482b;
+            display: inline-block;
+            height: 20px;
+            border-radius: 10px;
+            border: 10px #70482b solid;
+            position: absolute;
+            top: 260px;
+            left: 8px;
+            animation: contoh 1s forwards;
+        }
+        .contoh6text{
+            color: bisque;
+            font-size: 20px;
+            font-family: Heavitas;
+            position: relative;
+            top: -22px;
+        }
+        @keyframes inpu1{
+            0%{top: 150%;}
+            100%{top: 90%;}
+        }
+        @keyframes tekh1{
+            0%{top: 500px;}
+            100%{top: 300px;}
+        }
+        @keyframes tekh2{
+            0%{top: 550px;}
+            100%{top: 400px;}
+        }
+        @keyframes kotagede{
+            0%{top: -500px;}
+            100%{top: 30px;}
+        }
+        @keyframes contoh{
+            0%{left: -200px;}
+            100%{left: 9px;}
+        }
+        @keyframes co{
+            0%{left: -60px;}
+            100%{left: 100px;}
+        }
+    </style>
+    <div class="kotakgede"><p class="tanyaapaaja">tanya apa aja</p></div>
+    <input type="text" class="inputteks" id="input">
+    <a href="home.html"><div class="kotakb"> <img src="panah.png" style="height: 60px;width: 100px;"></div></a>
+    <div class="kotakc"></div>
+    <button class="tb1" onclick="bt1()"><img src="kirim.png" class="gb1"></button>
+    <div id="bgh"><p id="jw1" class="jawa1"></p></div>
+    <div id="bgh2"><p id="jw2" class="jawa1"></p></div>
+    <p style="color: #70482b;font-size: 25px;font-family: Heavitas;position: absolute;top: -9px;">contoh pertanyaan:</p>
+    <div class="contoh1" onclick="halo()">
+        <p class="contoh1text">halo</p>
+    </div>
+    <div class="contoh2" onclick="hai()">
+        <p class="contoh2text">hai</p>
+    </div>
+    <div class="contoh3" onclick="asa()">
+        <p class="contoh3text">asalamualaikum</p>
+    </div>
+    <div class="contoh4" onclick="kapan()">
+        <p class="contoh4text">kapan kamu lahir</p>
+    </div>
+    <div class="contoh5" onclick="siapa()">
+        <p class="contoh5text">siapa nama lengkap mu</p>
+    </div>
+    <div class="contoh6" onclick="apa()">
+        <p class="contoh6text">apa kabar</p>
+    </div>
+    <script>
+        function bt1(){
+        let anu = true
+        let ja1 = document.getElementById('jw1')
+        let ino = document.getElementById('input').value.toLowerCase();
+        let kotajawa = document.getElementById('bgh')
+        let kotajawa2 = document.getElementById('jw2')
+        let kotajawa3;
+        let kotajawa4 = document.getElementById('bgh2')
+        ja1.textContent= ino
+        kotajawa.classList.add('bkjawa')
+        kotajawa.classList.add('bkjawa2')
+        switch (ino){
+            case 'halo':
+            kotajawa3= 'hallo juga'
+            break
+            case 'hai':
+            kotajawa3= 'hai juga'
+            break
+            case 'kapan kamu lahir':
+            kotajawa3= 'tanggal 6'
+            break
+            case 'siapa nama lengkap mu':
+            kotajawa3= 'adipati farras'
+            break
+            case 'asalamualaikum':
+            kotajawa3= 'walaikumsalam'
+            break
+            case 'apa kabar':
+            kotajawa3= 'baik'
+            break
+            default:
+            kotajawa3= 'sorry nda bisa jawab'
+        }
+        setTimeout(() => {
+            kotajawa.classList.remove('bkjawa2');
+        }, 1000);
+        setTimeout(()=>{
+            kotajawa2.textContent= kotajawa3;
+            kotajawa4.classList.add('bkjawa3');
+            kotajawa4.classList.add('bkjawa4');
+        }, 1000);
+        setTimeout(() => {
+            kotajawa4.classList.remove('bkjawa4');
+        }, 2000);
+    }
+    function halo(){
+        let halo1 = document.getElementsByClassName('contoh1text')[0]
+        let ino2 = document.getElementById('input')
+        ino2.value = halo1.textContent
+    }
+    function hai(){
+        let halo1 = document.getElementsByClassName('contoh2text')[0]
+        let ino2 = document.getElementById('input')
+        ino2.value = halo1.textContent
+    }
+    function asa(){
+        let halo1 = document.getElementsByClassName('contoh3text')[0]
+        let ino2 = document.getElementById('input')
+        ino2.value = halo1.textContent
+    }
+    function kapan(){
+        let halo1 = document.getElementsByClassName('contoh4text')[0]
+        let ino2 = document.getElementById('input')
+        ino2.value = halo1.textContent
+    }
+    function siapa(){
+        let halo1 = document.getElementsByClassName('contoh5text')[0]
+        let ino2 = document.getElementById('input')
+        ino2.value = halo1.textContent
+    }
+    function apa(){
+        let halo1 = document.getElementsByClassName('contoh6text')[0]
+        let ino2 = document.getElementById('input')
+        ino2.value = halo1.textContent
+    }
+    </script>
+</body>
+</html>

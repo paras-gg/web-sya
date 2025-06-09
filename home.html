@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>home</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: bisque;
+            transition: 1s
+        }
+        .gantibggelap{
+            animation: ganti 1s forwards;
+        }
+        .gantibgputih{
+            animation: terang 1s forwards;
+        }
+        .ubahbg{
+            background-color: rgb(95, 54, 0);
+            height: 70px;
+            width: 70px;
+            position: absolute;
+            left: 89.2%;
+            top: 24px;
+            z-index: 1;
+            border-radius: 100%;
+            animation: kotak2 0.9s;
+        }
+        .jdl1{
+            color: rgb(255, 204, 0);
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            z-index: 2;
+            font-size: 40px;
+            animation: teks1 0.9s;
+            font-family: "CoffieBold", sans-serif;
+        }
+        .box1{
+            background-color: aliceblue;
+            width: 234px;
+            height: 65px;
+            position: absolute;
+            top: 27px;
+            left: 25px;
+            z-index: 1;
+            border-radius: 9px;
+            animation: kotak1 0.9s;
+        }
+        .box2{
+            background-color: rgb(238, 209, 112);
+            width: 450px;
+            height: 45px;
+            position: absolute;
+            top: 170px; 
+            left: 24px;
+            border-radius: 20px;
+            animation: kotak1 1.2s ;
+        }
+        .box3{
+            background-color: rgb(238, 209, 112);
+            width: 450px;
+            height: 45px;
+            position: absolute;
+            top: 240px; 
+            left: 24px;
+            border-radius: 20px;
+            animation: kotak1 1.1s;
+        }
+        .box4{
+            background-color: rgb(238, 209, 112);
+            width: 450px;
+            height: 45px;
+            position: absolute;
+            top: 310px; 
+            left: 24px;
+            border-radius: 20px;
+            animation: kotak1 1s ;
+        }
+        .box5{
+            background-color: rgb(238, 209, 112);
+            width: 450px;
+            height: 45px;
+            position: absolute;
+            top: 380px; 
+            left: 24px;
+            border-radius: 20px;
+            animation: kotak1 0.9s ;
+        }
+        @keyframes ganti{
+            0%{background-color: bisque;}
+            100%{background-color: rgb(95, 54, 0);}
+        }
+        @keyframes terang{
+            0%{background-color: rgb(95, 54, 0);}
+            100%{background-color: bisque;}
+        }
+        @keyframes hitam{
+            0%{background-color: rgb(95, 54, 0);}
+            100%{background-color: bisque;}
+        }
+        @keyframes putih{
+            0%{background-color: bisque;}
+            100%{background-color: rgb(95, 54, 0);}
+        }
+        @keyframes kotak1{
+            0%{left: -290px;}
+            100%{left: 25px;}
+        }
+        @keyframes teks1{
+            0%{left: -290px;}
+            100%{left: 30px;}
+        }
+        @keyframes foto1{
+            0%{left: 1100px;}
+            100%{left: 765px;}
+        }
+        @keyframes gtbg{
+            0%{background-color: rgb(95, 54, 0);}
+            100%{background-color: bisque;}
+        }
+        @keyframes kotaka{
+            0%{top: 240px;}
+            100%{top: 300px;}
+        }
+        @keyframes kotak2{
+            0%{left: 1100px;}
+            100%{left: 89.2%;}
+        }
+        @keyframes gambar{
+            0%{left: 0%;}
+            100%{left: 15px;}
+        }
+        @keyframes memanjang{
+            0%{height: 45px;}
+            100%{height: 200px;}
+        }
+        @keyframes memendek{
+            0%{height: 200px;}
+            100%{height: 45px;}
+        }
+        @keyframes kebawah{
+            0%{top: 240px;}
+            100%{top: 400px;}
+        }
+        @keyframes keatas{
+            0%{top: 400px;}
+            100%{top: 240px;}
+        }
+        @keyframes kebawah2{
+            0%{top: 310px;}
+            100%{top: 470px;}
+        }
+        @keyframes keatas2{
+            0%{top: 470px;}
+            100%{top: 310px;}
+        }
+        @keyframes kebawah3{
+            0%{top: 380px;}
+            100%{top: 540px;}
+        }
+        @keyframes keatas3{
+            0%{top: 540px;}
+            100%{top: 380px;}
+        }
+        @keyframes tekf1{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        @keyframes teke1{
+            0%{opacity: 1;}
+            100%{opacity: 0;}
+        }
+        .gambar1{
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: 180px;
+            left: 765px;
+            border-radius: 100%;
+            animation: foto1 0.9s;
+        }
+        .gambar2{
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            z-index: 2;
+            animation: gambar 0.9s;
+        }
+        .memanjang{
+            animation: memanjang 0.5s forwards;
+        }
+        .memendek{
+            animation: memendek 0.5s forwards;
+        }
+        .tombolgelap{
+            animation: hitam 1s forwards;
+        }
+        .tombolterang{
+            animation: putih 1s forwards;
+        }
+        .kebawah{
+            animation: kebawah 0.5s forwards;
+        }
+        .keatas{
+            animation: keatas 0.5s forwards;
+        }
+        .kebawah2{
+            animation: kebawah2 0.5s forwards;
+        }
+        .keatas2{
+            animation: keatas2 0.5s forwards;
+        }
+        .kebawah3{
+            animation: kebawah3 0.5s forwards;
+        }
+        .keatas3{
+            animation: keatas3 0.5s forwards;
+        }
+        .tekc1{
+            animation: tekf1 2.7s forwards;
+        }
+        .tekb1{
+            animation: teke1 0.14s forwards;
+        }
+        .p1{
+            position: absolute;
+            top: 23px;
+            left: 24px;
+            font-size: 15px;
+            font-family: "Wishcar Moundy", sans-serif;
+            color: #70482b;
+        }
+    </style>
+    <h1 class="jdl1">profile saya</h1>
+    <img src="https://cache.lahelu.com/image-PD7qSAzTy-55874" class="gambar1">
+    <div class="ubahbg" id="uhbg" onclick="ubhkbg()"> <img src="bulan.png" class="gambar2"></div>
+    <div class="box1"></div>
+    <div class="box2" onclick="bok1()" id="bok"><p style="font-size: 20px; position: absolute; left: 24px; top: -10px; font-family: Heavitas; color: #70482b;">tempat, tanggal lahir, dan hobi :</p>
+    <p id="tek1" class="p1"></p></div>
+    <a href="vidio perkenalan.html"><div class="box3" id="bok2"><p style="font-size: 20px; position: absolute; top: -10px; left: 24px; font-family: Heavitas; color: #70482b;">vidio prekenalan</p></div></a>
+    <a href="kirim kontak ke saya.html"><div class="box4" id="bok3"> <p style="font-size: 20px; position: absolute; top: -10px; left: 24px; font-family: Heavitas; color: #70482b;">kirim kontak ke saya</p> </div></a>
+    <div class="box5" id="bok4"></div>
+    <script>
+        let panjang=false
+        let bokx = document.getElementById('bok')
+        let tekx1 = document.getElementById('tek1')
+        let bokx2 = document.getElementById('bok2')
+        let bokx3 = document.getElementById('bok3')
+        let bokx4 = document.getElementById('bok4')
+        function bok1(){
+            if (panjang){
+                bokx.classList.remove('memanjang')
+                bokx.classList.add('memendek')
+
+                bokx2.classList.remove('kebawah')
+                bokx2.classList.add('keatas')
+
+                bokx3.classList.remove('kebawah2')
+                bokx3.classList.add('keatas2')
+
+                bokx4.classList.remove('kebawah3')
+                bokx4.classList.add('keatas3')
+
+                tekx1.classList.remove('tekc1')
+                tekx1.classList.add('tekb1')
+            }else{
+                bokx.classList.remove('memendek')
+                bokx.classList.add('memanjang')
+
+                bokx2.classList.remove('keatas')
+                bokx2.classList.add('kebawah')
+
+                bokx3.classList.remove('keatas2')
+                bokx3.classList.add('kebawah2')
+
+                bokx4.classList.remove('keatas3')
+                bokx4.classList.add('kebawah3')
+                tekx1.innerHTML= 'tanggal: 06 <br> bulan: juli <br> tahun: 2009 <br> alamat: btn km1 <br> hobi: ngedesain'
+                tekx1.classList.add('tekc1')
+                tekx1.classList.remove('tekb1')
+            }panjang = !panjang
+        }
+        let balik= false
+        let tombol= document.getElementById('uhbg')
+        function ubhkbg(){
+            if (balik){
+                document.body.classList.remove('gantibggelap')
+                document.body.classList.add('gantibgputih')
+                tombol.classList.remove('tombolgelap')
+                tombol.classList.add('tombolterang')
+            }else{
+                document.body.classList.remove('gantibgputih')
+                document.body.classList.add('gantibggelap')
+                tombol.classList.remove('tombolterang')
+                tombol.classList.add('tombolgelap')
+            } balik= !balik
+        }
+    </script>
+</body>
+</html>

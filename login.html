@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: bisque;
+        }
+        .kotakged{
+            background-color: rgb(182, 131, 68);
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            top: 80px;
+            left: 390px;
+            z-index: 1;
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px black;
+        }
+        .password{
+            background-color: bisque;
+            border-radius: 5px;
+            width: 180px;
+            height: 30px;
+            font-size: 16px;
+            border: none;
+            position: absolute;
+            top: 130px;
+            left: 190px;
+            z-index: 2;
+            font-family: Heavitas;
+        }
+        .gmail{
+            background-color: bisque;
+            border-radius: 5px;
+            width: 180px;
+            height: 30px;
+            font-size: 16px;
+            border: none;
+            position: absolute;
+            top: 87px;
+            left: 190px;
+            z-index: 2;
+            font-family: Heavitas;
+        }
+        .logim{
+            background-color: bisque;
+            font-family: Heavitas;
+            color: #70482b;
+            border: none;
+            height: 35px;
+            width: 100px;
+            font-size: 21px;
+            border-radius: 20px;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+    <div class="kotakged">
+    <h1 style="color: bisque;font-family: Heavitas; position: absolute;left: 200px;">login</h1>
+    <input type="text" placeholder="password" class="password">
+    <input type="text" placeholder="gmail" class="gmail">
+    <p style="position: absolute; top: 70px;left: 92px;color: bisque;font-family: Heavitas;font-size: 20px;">gmail :</p>
+    <p style="position: absolute; top: 114px;left: 41px;color: bisque;font-family: Heavitas;font-size: 20px;">password :</p>
+    <button onclick="login()" class="logim">login</button>
+    <p style="position: absolute; top: 150px; left: 190px;color: rgb(255, 255, 255);" class="pwsalah"></p>
+    </div>
+    <script>
+        function login(){
+                let log = document.querySelector('.password').value.toLowerCase()
+                let logg = document.querySelector('.gmail').value.toLowerCase()
+                const pw = '123'
+                //const gml = 'raz'
+                let slh = document.querySelector('.pwsalah')
+            if(log === pw && logg.endsWith('gmail.com')){
+                window.location.href = 'home.html'
+            }else{
+                slh.textContent = 'gmail atau password salah.'
+            }
+            setTimeout(() => {
+            slh.textContent = '';
+        }, 3000);
+        }
+    </script>
+</body>
+</html>
